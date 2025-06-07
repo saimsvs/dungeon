@@ -1,0 +1,116 @@
+/*{
+   "tasks": [
+      {
+         "type": "shell",
+         "label": "C/C++: Build and Run with Valgrind",
+         "command": "g++",
+         "args": [
+            "-g",
+            "${file}",
+            "-o",
+            "${fileDirname}/${fileBasenameNoExtension}",
+            "${workspaceFolder}/src/*.cpp",
+            "-I${workspaceFolder}/headers",
+            "&&",
+            "valgrind",
+            "--leak-check=full",
+            "${fileDirname}/${fileBasenameNoExtension}"
+         ],
+         "group": {
+            "kind": "build",
+            "isDefault": true
+         }
+      },
+      {
+         "type": "cppbuild",
+         "label": "C/C++: g++.exe build active file",
+         "command": "C:\\msys64\\ucrt64\\bin\\g++.exe",
+         "args": [
+            "-fdiagnostics-color=always",
+            "-g",
+            "${file}",
+            "-o",
+            "${fileDirname}\\${fileBasenameNoExtension}.exe"
+         ],
+         "options": {
+            "cwd": "${fileDirname}"
+         },
+         "problemMatcher": [
+            "$gcc"
+         ],
+         "group": "build",
+         "detail": "compiler: C:\\msys64\\ucrt64\\bin\\g++.exe"
+      },
+      {
+         "type": "cppbuild",
+         "label": "C/C++: g++.exe build active file",
+         "command": "C:\\msys64\\mingw64\\bin\\g++.exe",
+         "args": [
+            "-fdiagnostics-color=always",
+            "-g",
+            "${file}",
+            "-o",
+            "${fileDirname}\\${fileBasenameNoExtension}.exe"
+         ],
+         "options": {
+            "cwd": "C:\\msys64\\mingw64\\bin"
+         },
+         "problemMatcher": [
+            "$gcc"
+         ],
+         "group": "build",
+         "detail": "compiler: C:\\msys64\\mingw64\\bin\\g++.exe"
+      }
+   ],
+   "version": "2.0.0"
+}*/
+{
+   "version": "2.0.0",
+   "tasks": [
+      {
+         "type": "cppbuild",
+         "label": "C/C++: g++ build active file with SFML",
+         "command": "g++",
+         "args": [
+            "${file}",
+            "-o",
+            "${fileDirname}\\${fileBasenameNoExtension}.exe",
+            "${workspaceFolder}\\src\\*.cpp",
+            "-I", "C:/Users/840 G8/SFML-3.0/SFML-3.0.0/include",
+            "-L", "C:/Users/840 G8/SFML-3.0/SFML-3.0.0/lib",
+            "-lsfml-graphics",
+            "-lsfml-window",
+            "-lsfml-system"
+         ],
+         "group": {
+            "kind": "build",
+            "isDefault": true
+         }
+      }
+   ]
+}
+
+ 
+
+
+/*
+{
+   "tasks": [
+      {
+         "type": "cppbuild",
+         "label": "C/C++: g++ build active file",
+         "command": "g++",
+         "args": [
+            "${file}",
+            "-o",
+            "${fileDirname}\\${fileBasenameNoExtension}.exe",
+            "${workspaceFolder}\\src\\*.cpp"
+         ],
+         "group": {
+            "kind": "build",
+            "isDefault": true
+         }
+      }
+   ],
+   "version": "2.0.0"
+} */
