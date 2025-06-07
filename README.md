@@ -59,8 +59,9 @@ A simple top-down 2D dungeon crawler built with SFML. Explore rooms, fight monst
 
 ---
 
-File Structure
+## Directory Structure
 
+```text
 /.
 ├── main/
 │   ├── sfml.cpp
